@@ -1,0 +1,84 @@
+.header {
+  height: 120px;
+  margin: 40px; /* NB: Remember to apply this margin to main container as well.
+   Footer should have 40px padding instead because of background-color. */
+}
+
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__navigation ul {
+  display: flex;
+}
+
+.header__navigation li {
+  list-style: none;
+}
+
+.header__logo {
+  margin-left: 20px; /* Logo is slightly pushed to the right on desktop view */
+}
+
+.header__logo img {
+  width: 50%;
+  height: 50%;
+}
+
+.header__navlink a {
+  padding: 53px 25px 0 25px; /* 53px padding-top fixes border-top to top of viewport */
+  text-decoration: none;
+}
+
+.header__navlink a:link,
+.header__navlink a:visited {
+  color: inherit;
+}
+
+.header__navlink:hover a {
+  border-top: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+/*************
+ MEDIA QUERIES
+ */
+
+@media screen and (max-width: 767px) {
+  .header {
+    margin: 20px 0;
+  }
+
+  .header__navigation {
+    flex-direction: column;
+  }
+
+  .header__navigation ul {
+    padding: 0;
+    width: 100%;
+  }
+
+  .header__logo {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .header__navlink {
+    width: 50%;
+    text-align: center;
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 14px;
+  }
+
+  .header__navlink:hover {
+    cursor: pointer;
+    border-bottom: 2px solid var(--color-primary);
+  }
+
+  .header__navlink:hover a {
+    border-top: 0;
+  }
+}
