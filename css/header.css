@@ -1,7 +1,6 @@
 .header {
-  height: 120px;
-  margin: 40px; /* NB: Remember to apply this margin to main container as well.
-   Footer should have 40px padding instead because of background-color. */
+  height: 75px;
+  margin: 40px 40px 0 40px;
 }
 
 .header__navigation {

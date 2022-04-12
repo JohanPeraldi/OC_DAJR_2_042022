@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/search.css">
+  <script src="https://kit.fontawesome.com/b73303dc29.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header">
@@ -26,5 +28,29 @@
       </ul>
     </nav>
   </header>
+  <main class="main">
+    <section class="main__section--search">
+      <h1 class="main__title">Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p class="main__subtitle">En plein centre ville ou en pleine nature</p>
+      <form class="main__form" method="post" action="#">
+        <label for="search" class="main__pin-icon"><i class="fas fa-map-marker-alt"></i></label>
+        <input type="search" name="search" id="search" class="main__search-input" value="Marseille, France">
+        <input type="button" class="main__search-button" value="Rechercher">
+        <!-- Ci-dessous, le bouton sur mobile -->
+        <!-- <button><i class="fas fa-search"></i></button> -->
+      </form>
+      <div class="main__filters">
+        <p>Filtres</p>
+        <button>Économique</button>
+        <button>Familial</button>
+        <button>Romantique</button>
+        <button>Animaux autorisés</button>
+      </div>
+      <div class="main__information">
+        <i class="fas fa-info fa-xs"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
