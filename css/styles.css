@@ -15,3 +15,14 @@ body {
 .main {
   margin: 0 40px;
 }
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* PHONES */
+@media screen and (max-width: 767px) {
+  .main {
+    margin: 80px 12px 0;
+  }
+}

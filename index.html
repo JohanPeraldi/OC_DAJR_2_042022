@@ -34,10 +34,11 @@
       <p class="main__subtitle">En plein centre ville ou en pleine nature</p>
       <form class="main__form" method="post" action="#">
         <label for="search" class="main__pin-icon"><i class="fas fa-map-marker-alt"></i></label>
-        <input type="search" name="search" id="search" class="main__search-input" value="Marseille, France">
-        <input type="button" class="main__search-button" value="Rechercher">
-        <!-- Ci-dessous, le bouton sur mobile -->
-        <!-- <button><i class="fas fa-search"></i></button> -->
+        <input type="text" name="search" id="search" class="main__search-input" value="Marseille, France">
+        <!-- Button on tablet and desktop below -->
+        <input type="button" class="main__search-button button--desktop" value="Rechercher">
+        <!-- Button on phones below -->
+        <button class="main__search-button button--phone"><i class="fas fa-search"></i></button>
       </form>
       <div class="main__filters">
         <p>Filtres</p>

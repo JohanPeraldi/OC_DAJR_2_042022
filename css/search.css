@@ -31,6 +31,7 @@
   border: 1px solid var(--color-secondary);
   padding-left: 15px;
   font-weight: bold;
+  flex-grow: 0;
 }
 
 .main__search-button {
@@ -50,6 +51,10 @@
   color: var(--color-primary);
 }
 
+.button--phone {
+  display: none;
+}
+
 .main__filters,
 .main__information {
   display: flex;
@@ -63,11 +68,8 @@
 
 .main__filters {
   flex-wrap: wrap;
+  gap: 28px;
   margin: 24px 0;
-}
-
-.main__filters p {
-  margin-right: 30px;
 }
 
 .main__filters button {
@@ -76,7 +78,6 @@
   background-color: white;
   border: 2px solid var(--color-secondary);
   border-radius: 50px;
-  margin-right: 20px;
   padding: 0 10px 0 0;
   cursor: pointer;
   transition: all 0.3s;
@@ -112,4 +113,61 @@
   border-radius: 50px;
   padding: 12px;
   margin-right: 12px;
+}
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* TABLETS */
+@media screen and (max-width: 991px) {
+  .main__filters {
+    gap: 12px;
+  }
+}
+
+/* PHONES */
+@media screen and (max-width: 767px) {
+  .main__title {
+    font-size: 24px;
+  }
+
+  .main__subtitle {
+    margin: 12px 0;
+  }
+
+  .main__form {
+    /* -10px margin-right fixes search button translation
+    causing form decentralization */
+    margin: 30px -10px 0 0;
+    justify-content: center;
+  }
+
+  .main__search-input {
+    flex-grow: 1;
+  }
+
+  .button--desktop {
+    display: none;
+  }
+
+  .button--phone {
+    display: block;
+  }
+
+  .main__search-button {
+    border-radius: 15px;
+    /* This translation causes form being pushed 10px to the left
+    This is fixed by -10px margin-right on .main__form */
+    transform: translateX(-10px);
+  }
+
+  .main__filters p {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .main__information {
+    align-items: baseline;
+  }
 }
