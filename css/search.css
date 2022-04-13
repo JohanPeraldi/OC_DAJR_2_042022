@@ -4,7 +4,7 @@
 }
 
 .main__subtitle {
-  margin-top: 5px;
+  margin: 5px 0;
 }
 
 .main__form {
@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: flex-start;
   height: 45px;
+  margin: 15px 0;
 }
 
 .main__pin-icon {
@@ -40,12 +41,64 @@
   border: 1px solid var(--color-primary);
   border-radius: 0 15px 15px 0;
   padding: 0 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.main__search-button:hover {
+  background-color: white;
+  color: var(--color-primary);
 }
 
 .main__filters,
 .main__information {
   display: flex;
   align-items: center;
+}
+
+.main__filters p,
+.main__filters button {
+  font-weight: bold;
+}
+
+.main__filters {
+  flex-wrap: wrap;
+  margin: 24px 0;
+}
+
+.main__filters p {
+  margin-right: 30px;
+}
+
+.main__filters button {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 2px solid var(--color-secondary);
+  border-radius: 50px;
+  margin-right: 20px;
+  padding: 0 10px 0 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.main__filters button:hover {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  color: white;
+}
+
+.main__filters i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  border-radius: 50px;
+  margin-right: 12px;
+  transform: scale(1.1);
 }
 
 .main__information i {
