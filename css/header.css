@@ -1,6 +1,6 @@
 .header {
   height: 75px;
-  margin: 40px 40px 0 40px;
+  margin: 0 40px 40px 40px;
 }
 
 .header__navigation {
@@ -11,6 +11,7 @@
 
 .header__navigation ul {
   display: flex;
+  margin-top: 0;
 }
 
 .header__navigation li {
@@ -18,7 +19,8 @@
 }
 
 .header__logo {
-  margin-left: 20px; /* Logo is slightly pushed to the right on desktop view */
+  /* Logo is slightly pushed to the right on desktop view */
+  margin-left: 20px;
 }
 
 .header__logo img {
@@ -27,7 +29,7 @@
 }
 
 .header__navlink a {
-  padding: 53px 25px 0 25px; /* 53px padding-top fixes border-top to top of viewport */
+  padding: 0 25px;
   text-decoration: none;
 }
 
@@ -36,7 +38,14 @@
   color: inherit;
 }
 
-.header__navlink:hover a {
+.header__navlink {
+  border-top: 2px solid transparent;
+  padding-top: 53px;
+  transition: border-color 0.3s;
+}
+
+.header__navlink:hover {
+  cursor: pointer;
   border-top: 2px solid var(--color-primary);
   color: var(--color-primary);
 }
@@ -70,15 +79,12 @@
     width: 50%;
     text-align: center;
     border-bottom: 2px solid var(--color-secondary);
+    padding-top: 0;
     padding-bottom: 14px;
   }
 
   .header__navlink:hover {
-    cursor: pointer;
+    border-top: 2px solid transparent;
     border-bottom: 2px solid var(--color-primary);
-  }
-
-  .header__navlink:hover a {
-    border-top: 0;
   }
 }
