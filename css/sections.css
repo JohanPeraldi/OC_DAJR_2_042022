@@ -1,7 +1,38 @@
+.section-wrapper {
+  display: flex;
+  gap: 40px;
+}
+
 .main__section {
   background-color: var(--color-secondary);
+  margin-top: 30px;
   padding: 40px;
   border-radius: 20px;
+}
+
+.main__section--accomodation {
+  flex-basis: 66.66%;
+}
+
+.main__section.main__section--accomodation,
+.main__section.main__section--most-popular {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.main__section.main__section--accomodation > p {
+  margin-top: 35px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main__section.main__section--accomodation > p a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main__section--most-popular {
+  flex-basis: 33.33%;
 }
 
 .main__section-title {
@@ -9,3 +40,4 @@
   justify-content: space-between;
   align-items: center;
 }
+

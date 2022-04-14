@@ -52,8 +52,29 @@
   color: inherit;
 }
 
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card-wrapper .card--vertical {
+  flex: 1 1 30%;
+}
+
+.card-wrapper .card--horizontal {
+  flex: 1 1 30%;
+}
+
+.main__section--most-popular .card-wrapper {
+  flex-direction: column;
+}
+
 .card--vertical > a {
   flex-direction: column;
+  height: 100%; /* Important to allow cards to stretch vertically */
 }
 
 .card > a:hover {
@@ -80,15 +101,30 @@
   animation: reveal 1s;
 }
 
+.card__image {
+  object-fit: cover;
+}
+
 .card--vertical .card__image {
-  flex-basis: 60%;
+  height: 125px;
   width: 100%;
   border-radius: 20px 20px 0 0;
 }
 
 .card__text {
-  margin: 0 0 10px 20px;
-  line-height: 0.5;
+  margin: 0 0 10px 12px;
+}
+
+.card--horizontal .card__text {
+  margin-left: 20px;
+}
+
+.card__text h3 {
+  margin: 10px 0 0;
+}
+
+.card__text p {
+  margin: 6px 0;
 }
 
 .card__text p span {
@@ -108,8 +144,9 @@
 }
 
 .card--horizontal .card__image {
-  flex-basis: 40%;
-  width: 40%;
+  flex-basis: 34%;
+  height: 150px;
+  width: 34%;
   border-radius: 20px 0 0 20px;
 }
 
