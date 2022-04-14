@@ -1,0 +1,107 @@
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
+    opacity: 1;
+  }
+
+  25% {
+    transform: scale(0.99);
+    box-shadow: 6px 6px 18px 5px rgba(0, 0, 0, 0.15);
+    opacity: 0.9;
+  }
+
+  50% {
+    transform: scale(1);
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
+    opacity: 1;
+  }
+
+  75% {
+    transform: scale(1.02);
+    box-shadow: 2px 2px 25px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main__section--accomodation {
+  background-color: var(--color-secondary);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.card > a {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
+  padding: 5px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card > a:hover {
+  animation: heartbeat ease-out 0.5s;
+}
+
+.card > a:hover .fa-star:first-child {
+  animation: reveal 0.2s;
+}
+
+.card > a:hover .fa-star:nth-child(2) {
+  animation: reveal 0.4s;
+}
+
+.card > a:hover .fa-star:nth-child(3) {
+  animation: reveal 0.6s;
+}
+
+.card > a:hover .fa-star:nth-child(4) {
+  animation: reveal 0.8s;
+}
+
+.card > a:hover .fa-star:last-child {
+  animation: reveal 1s;
+}
+
+.card__image {
+  flex-basis: 60%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card__text {
+  margin: 0 0 10px 20px;
+  line-height: 0.5;
+}
+
+.card__text p span {
+  font-weight: bold;
+}
+
+.stars > .star-on {
+  color: var(--color-primary);
+}
+
+.stars > .star-off {
+  color: var(--color-secondary);
+}
