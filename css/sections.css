@@ -1,0 +1,11 @@
+.main__section {
+  background-color: var(--color-secondary);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.main__section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

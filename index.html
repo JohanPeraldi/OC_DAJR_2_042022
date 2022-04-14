@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/search.css">
-  <link rel="stylesheet" href="./css/accomodation.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="./css/cards.css">
   <script src="https://kit.fontawesome.com/b73303dc29.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -54,10 +55,10 @@
       </div>
     </section>
     <!-- HÉBERGEMENTS A MARSEILLE -->
-    <section class="main__section--accomodation">
+    <section class="main__section">
       <h2>Hébergements à Marseille</h2>
       <!-- ONE CARD -->
-      <div class="card">
+      <div class="card card--vertical">
         <a href="#">
           <img src="./images/hebergements/4_small/auberge-la-cannebiere.jpg"
                srcset="./images/hebergements/4_small/auberge-la-cannebiere.jpg 750w,
@@ -69,6 +70,38 @@
           <div class="card__text">
             <h3>Auberge La Cannebière</h3>
             <p>Nuit à partir de <span>25€</span></p>
+            <div class="stars">
+              <i class="fas fa-star star-on"></i>
+              <i class="fas fa-star star-on"></i>
+              <i class="fas fa-star star-on"></i>
+              <i class="fas fa-star star-on"></i>
+              <i class="fas fa-star star-off"></i>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- LES PLUS POPULAIRES -->
+    <section class="main__section">
+      <div class="main__section-title">
+        <h2>Les plus populaires</h2>
+        <i class="fas fa-chart-line"></i>
+      </div>
+      <!-- ONE CARD -->
+      <div class="card card--horizontal">
+        <a href="#">
+          <img src="./images/hebergements/4_small/hotel-le-soleil-du-matin.jpg"
+               srcset="./images/hebergements/4_small/hotel-le-soleil-du-matin.jpg 750w,
+                       ./images/hebergements/3_medium/hotel-le-soleil-du-matin.jpg 1499w,
+                       ./images/hebergements/2_large/hotel-le-soleil-du-matin.jpg 2997w,
+                       ./images/hebergements/1_xlarge/hotel-le-soleil-du-matin.jpg 5993w"
+               alt="Hôtel Le soleil du matin, Marseille"
+               class="card__image">
+          <div class="card__description">
+            <div class="card__text">
+              <h3>Hôtel Le soleil du matin</h3>
+              <p>Nuit à partir de <span>128€</span></p>
+            </div>
             <div class="stars">
               <i class="fas fa-star star-on"></i>
               <i class="fas fa-star star-on"></i>
