@@ -47,6 +47,67 @@
   align-items: center;
 }
 
+/* ACTIVITÉS À MARSEILLE */
+.main__section--activities {
+  background-color: white;
+  margin: 50px 0;
+  padding: 0;
+}
+
+.main__section--activities .card-wrapper {
+  height: 400px;
+  gap: 40px;
+}
+
+.main__section--activities .card-wrapper > * {
+  flex: 1 1 22%;
+}
+
+.card.card--large,
+.cards {
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cards > * {
+  border-radius: 20px;
+}
+
+/* REMOVE WHEN DONE */
+.card--large:first-of-type {
+  background-color: hotpink;
+}
+
+.cards:nth-of-type(2) {
+  background-color: dodgerblue;
+}
+
+.card--large:nth-of-type(3) {
+  background-color: aquamarine;
+}
+
+.cards:last-of-type {
+  background-color: antiquewhite;
+}
+
+.card--medium {
+  background-color: orange;
+  flex: 1 1 60%;
+}
+
+.card--small {
+  background-color: cadetblue;
+  flex: 1 1 40%;
+}
+
 /*************
  MEDIA QUERIES
  */
