@@ -164,3 +164,34 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* TABLETS */
+@media screen and (max-width: 991px) {
+  .main__section--most-popular .card-wrapper {
+     flex-direction: row;
+  }
+
+  .card-wrapper .card--vertical {
+    flex: 1 1 47%;
+  }
+
+  .card-wrapper .card--horizontal {
+    flex: 0 0 47%;
+  }
+}
+
+/* PHONES */
+@media screen and (max-width: 767px) {
+  .card-wrapper {
+    gap: 15px;
+  }
+
+  .card-wrapper .card--vertical,
+  .card-wrapper .card--horizontal {
+    flex-basis: 100%;
+  }
+}
