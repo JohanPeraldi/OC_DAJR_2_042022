@@ -184,6 +184,27 @@
   height: 38%;
 }
 
+/* Image title */
+.card--large,
+.card--medium,
+.card--small {
+  position: relative;
+}
+
+.card > p {
+  position: absolute;
+  background-color: white;
+  padding: 12px;
+  bottom: -16px;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 16px 16px; /* border-radius should be
+  less than cards' otherwise white background doesn't
+  cover image completely! */
+  font-size: 13px; /* Make sure font-size doesn't allow
+  text to drop down to another line! */
+}
+
 /*************
  MEDIA QUERIES
  */

@@ -76,7 +76,8 @@
   gap: 40px;
 }
 
-.cards > * {
+.cards > *,
+.card.card--large {
   border-radius: 20px;
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
 }
