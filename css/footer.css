@@ -5,7 +5,8 @@
 }
 
 .footer__content {
-  flex-basis: 30%;
+  /*flex: 0 1 35%;*/
+  flex-basis: 35%;
 }
 
 .footer__content > ul {
@@ -32,4 +33,33 @@
 .footer__content > ul > li a:hover {
   border-bottom: 1px solid var(--color-primary);
   color: var(--color-primary);
+}
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* TABLETS */
+@media screen and (max-width: 991px) {
+  .footer {
+    margin-top: 490px; /* Find out why this is necessary
+    to avoid overlap with section above */
+    justify-content: space-between;
+  }
+
+  .footer__content {
+    /*flex: 0 1 30%;*/
+    flex-basis: 30%;
+  }
+}
+
+/* PHONES */
+@media screen and (max-width: 767px) {
+  .footer {
+    margin-top: 0; /* Remove this if margin-top property
+    is removed from TABLETS media queries */
+    flex-direction: column;
+    padding-left: 12px; /* Should be increased on whole page */
+    padding-right: 12px; /* Should be increased on whole page */
+  }
 }
