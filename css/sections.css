@@ -156,4 +156,18 @@
     padding: 0 12px;
     background-color: white;
   }
+
+  /* ACTIVITÉS À MARSEILLE */
+  .main__section.main__section--activities {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .main__section--activities .card-wrapper {
+    gap: 30px;
+  }
+
+  .cards {
+    gap: 30px;
+  }
 }
