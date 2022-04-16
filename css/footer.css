@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  background-color: var(--color-secondary);
+  padding: 20px 40px;
+}
+
+.footer__content {
+  flex-basis: 30%;
+}
+
+.footer__content > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer__content > ul > li {
+  padding: 5px 0;
+}
+
+.footer__content > ul > li:first-of-type {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.footer__content > ul > li a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  color: initial;
+  transition: all 0.3s;
+}
+
+.footer__content > ul > li a:hover {
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
