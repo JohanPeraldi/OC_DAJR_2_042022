@@ -134,6 +134,11 @@
   .main__section--accomodation {
     order: 2;
   }
+
+  /* ACTIVITÉS À MARSEILLE */
+  .main__section--activities .card-wrapper > * {
+    flex: 1 1 47%;
+  }
 }
 
 /* PHONES */
@@ -165,6 +170,10 @@
 
   .main__section--activities .card-wrapper {
     gap: 30px;
+  }
+
+  .main__section--activities .card-wrapper > * {
+    flex: initial;
   }
 
   .cards {
