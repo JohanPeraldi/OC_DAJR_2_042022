@@ -20,14 +20,14 @@
   <script src="https://kit.fontawesome.com/b73303dc29.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="top">
     <nav class="header__navigation">
       <div class="header__logo">
-        <a href="#"><img src="./images/logo/Booki.png" alt="Logo de Booki"></a>
+        <a href="#top"><img src="./images/logo/Booki.png" alt="Logo de Booki"></a>
       </div>
       <ul>
-        <li class="header__navlink"><a href="#">Hébergements</a></li>
-        <li class="header__navlink"><a href="#">Activités</a></li>
+        <li class="header__navlink"><a href="#accommodation">Hébergements</a></li>
+        <li class="header__navlink"><a href="#activities">Activités</a></li>
       </ul>
     </nav>
   </header>
@@ -57,7 +57,7 @@
     </section>
     <div class="section-wrapper">
       <!-- HÉBERGEMENTS A MARSEILLE -->
-      <section class="main__section main__section--accomodation">
+      <section class="main__section main__section--accommodation" id="accommodation">
         <h2>Hébergements à Marseille</h2>
         <div class="card-wrapper">
           <!-- FIRST CARD -->
@@ -211,7 +211,7 @@
             </a>
           </div>
         </div>
-        <p><a href="#">Afficher plus</a></p>
+        <p><a href="#top">Afficher plus</a></p>
       </section>
       <!-- LES PLUS POPULAIRES -->
       <section class="main__section main__section--most-popular">
@@ -298,7 +298,7 @@
         </div>
       </section>
     </div>
-    <section class="main__section main__section--activities">
+    <section class="main__section main__section--activities" id="activities">
       <!-- ACTIVITÉS À MARSEILLE -->
       <h2>Activités à Marseille</h2>
       <div class="card-wrapper">
@@ -373,23 +373,23 @@
     <div class="footer__content">
       <ul>
         <li>À propos</li>
-        <li><a href="#">Fonctionnement du site</a></li>
-        <li><a href="#">Conditions générales de vente</a></li>
-        <li><a href="#">Données et confidentialité</a></li>
+        <li><a href="#top">Fonctionnement du site</a></li>
+        <li><a href="#top">Conditions générales de vente</a></li>
+        <li><a href="#top">Données et confidentialité</a></li>
       </ul>
     </div>
     <div class="footer__content">
       <ul>
         <li>Nos hébergements</li>
-        <li><a href="#">Charte qualité</a></li>
-        <li><a href="#">Soumettre votre hôtel</a></li>
+        <li><a href="#top">Charte qualité</a></li>
+        <li><a href="#top">Soumettre votre hôtel</a></li>
       </ul>
     </div>
     <div class="footer__content">
       <ul>
         <li>Assistance</li>
-        <li><a href="#">Centre d'aide</a></li>
-        <li><a href="#">Nous contacter</a></li>
+        <li><a href="#top">Centre d'aide</a></li>
+        <li><a href="#top">Nous contacter</a></li>
       </ul>
     </div>
   </footer>

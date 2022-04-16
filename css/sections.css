@@ -14,26 +14,33 @@
   padding: 0 12px;
 }
 
-.main__section--accomodation {
+.main__section--accommodation {
   flex-basis: 66.66%;
   order: 1;
 }
 
-.main__section.main__section--accomodation,
+.main__section.main__section--accommodation,
 .main__section.main__section--most-popular {
   padding-top: 15px;
   padding-bottom: 20px;
 }
 
-.main__section.main__section--accomodation > p {
+.main__section.main__section--accommodation > p {
   margin-top: 35px;
   font-size: 20px;
   font-weight: bold;
 }
 
-.main__section.main__section--accomodation > p a {
+.main__section.main__section--accommodation > p a {
   text-decoration: none;
+  border-bottom: 1px solid transparent;
   color: inherit;
+  transition: all 0.3s;
+}
+
+.main__section.main__section--accommodation > p a:hover {
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 .main__section--most-popular {
@@ -119,7 +126,7 @@
     flex-direction: column;
   }
 
-  .main__section.main__section--accomodation {
+  .main__section.main__section--accommodation {
     margin-top: 0;
   }
 
@@ -131,7 +138,7 @@
     order: 1;
   }
 
-  .main__section--accomodation {
+  .main__section--accommodation {
     order: 2;
   }
 
@@ -156,7 +163,7 @@
     padding: 15px 12px 40px;
   }
 
-  .main__section.main__section--accomodation {
+  .main__section.main__section--accommodation {
     margin-top: 0;
     padding: 0 12px;
     background-color: white;
