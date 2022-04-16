@@ -165,6 +165,25 @@
   justify-content: space-between;
 }
 
+/* ACTIVITÉS À MARSEILLE */
+.card__image--full-height {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.card--large {
+  height: 100%;
+}
+
+.card--medium {
+  height: 52%;
+}
+
+.card--small {
+  height: 38%;
+}
+
 /*************
  MEDIA QUERIES
  */

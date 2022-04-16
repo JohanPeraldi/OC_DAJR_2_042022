@@ -60,14 +60,13 @@
 }
 
 .main__section--activities .card-wrapper > * {
-  flex: 1 1 22%;
+  flex: 1 1 20%;
 }
 
 .card.card--large,
 .cards {
   height: 100%;
   border-radius: 20px;
-  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
 }
 
 .cards {
@@ -79,10 +78,11 @@
 
 .cards > * {
   border-radius: 20px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
 }
 
 /* REMOVE WHEN DONE */
-.card--large:first-of-type {
+/*.card--large:first-of-type {
   background-color: hotpink;
 }
 
@@ -106,7 +106,7 @@
 .card--small {
   background-color: cadetblue;
   flex: 1 1 40%;
-}
+}*/
 
 /*************
  MEDIA QUERIES
