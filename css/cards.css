@@ -203,6 +203,7 @@
   cover image completely! */
   font-size: 13px; /* Make sure font-size doesn't allow
   text to drop down to another line! */
+  font-weight: bold;
 }
 
 /*************
