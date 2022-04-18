@@ -1,0 +1,32 @@
+:root {
+  --color-primary: #0065FC;
+  --color-primary-light: #DEEBFF;
+  --color-secondary: #F2F2F2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.main {
+  margin: 0 40px;
+}
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* PHONES */
+@media screen and (max-width: 767px) {
+  .main {
+    margin: 60px 0 0;
+  }
+}
