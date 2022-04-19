@@ -4,8 +4,6 @@
 
 .main__section {
   background-color: var(--color-secondary);
-  /*margin-top: 30px;*/
-  /*padding: 24px;*/
   border-radius: var(--border-radius-section);
 }
 
@@ -25,8 +23,7 @@
 
 .main__section.main__section--accommodation,
 .main__section.main__section--most-popular {
-  padding-top: 15px;
-  padding-bottom: 10px;
+  padding: 15px 20px;
 }
 
 .main__section.main__section--accommodation > p {
@@ -127,8 +124,7 @@
   }
 
   .main__section.main__section--most-popular {
-    flex-direction: row;
-    padding: 20px 16px 30px;
+    padding: 20px 18px 30px;
   }
 
   .main__section.main__section--accommodation {
@@ -144,7 +140,7 @@
   }
 
   .main__section--activities .card-wrapper {
-    gap: 30px;
+    gap: var(--gap);
   }
 
   .main__section--activities .card-wrapper > * {
@@ -152,6 +148,6 @@
   }
 
   .cards {
-    gap: 30px;
+    gap: var(--gap);
   }
 }

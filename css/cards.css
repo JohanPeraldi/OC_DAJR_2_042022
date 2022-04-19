@@ -221,12 +221,9 @@
      flex-direction: row;
   }
 
-  .card-wrapper .card--vertical {
-    flex: 1 1 47%;
-  }
-
+  .card-wrapper .card--vertical,
   .card-wrapper .card--horizontal {
-    flex: 0 0 47%;
+    flex: 0 0 48%;
   }
 }
 
