@@ -1,7 +1,15 @@
 :root {
+  /* COLORS */
   --color-primary: #0065FC;
   --color-primary-light: #DEEBFF;
   --color-secondary: #F2F2F2;
+
+  /* SPACING */
+  --gap: 30px;
+  --padding-section: 0 18px;
+
+  /* BORDERS */
+  --border-radius-section: 20px;
 }
 
 * {
@@ -16,17 +24,6 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-.main {
-  margin: 0 40px;
-}
-
-/*************
- MEDIA QUERIES
- */
-
-/* PHONES */
-@media screen and (max-width: 767px) {
-  .main {
-    margin: 60px 0 0;
-  }
+h2 {
+  font-size: 17px;
 }

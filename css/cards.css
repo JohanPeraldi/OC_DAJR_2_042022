@@ -25,7 +25,7 @@
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 25px;
 }
 
 .card-wrapper .card--vertical {
@@ -45,15 +45,19 @@
   height: 100%; /* Important to allow cards to stretch vertically */
 }
 
+.card--vertical .image-wrapper {
+  flex-basis: 60%;
+  max-height: 100px;
+}
+
 .card__image {
+  height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 
 .card--vertical .card__image {
-  flex-basis: 55%;
-  max-height: 100px; /* Important to keep all images level */
-  width: 100%;
-  border-radius: 20px 20px 0 0;
+  border-radius: 16px 16px 0 0;
 }
 
 .card--vertical .card__description {
@@ -62,21 +66,32 @@
   padding-left: 10px;
 }
 
+.card--horizontal .image-wrapper {
+  flex: 1 1 33%;
+  height: 120px;
+}
+
 .card--horizontal .card__description {
+  flex: 1 1 66%;
   padding-left: 16px;
 }
 
 .card__text h3 {
-  font-size: 18px;
+  font-size: 12px;
   margin: 10px 0 0;
 }
 
 .card__text p {
+  font-size: 12px;
   margin: 6px 0;
 }
 
 .card__text p span {
   font-weight: bold;
+}
+
+.stars {
+  margin-bottom: 2px;
 }
 
 .stars > .star-on {
@@ -91,16 +106,12 @@
   flex-direction: row;
 }
 
+.card--horizontal .image-wrapper {
+  max-width: 45%;
+}
+
 .card--horizontal .card__image {
-  height: 150px; /* Important to keep image sizes consistent up to 1450 vw */
-  /*
-  ADD MEDIA QUERIES TO KEEP IMAGE SIZES CONSISTENT ABOVE 1450VW
-  height: 160px from 1451vw to 1520vw
-  height: 170px from 1521 to 1600vw
-  height: 180px above 1600vw
-  */
-  max-width: 27%; /* Important to keep all images level */
-  border-radius: 20px 0 0 20px;
+  border-radius: 16px 0 0 16px;
 }
 
 .card__description {
@@ -110,36 +121,87 @@
 }
 
 /* ACTIVITÉS À MARSEILLE */
-.card__image--full-height {
-  height: 100%;
-  width: 100%;
-  border-radius: 20px;
+.main__section--activities .card-wrapper {
+  height: 400px;
+  gap: var(--gap);
 }
 
-.card--large {
-  height: 100%;
+.main__section--activities .card-wrapper > * {
+  flex: 1 1 20%;
 }
+
+/*.card.card--large,*/
+/*.cards {*/
+/*  height: 100%;*/
+/*  border-radius: 20px;*/
+/*}*/
+
+/*.card-wrapper.cards {*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: space-between;*/
+/*  gap: var(--gap);*/
+/*}*/
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--gap);
+}
+
+.cards > *,
+.card.card--large {
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
+}
+
+/*.card--large {*/
+/*  height: 100%;*/
+/*}*/
 
 .card--medium {
-  height: 52%;
+  /*height: 55%;*/
+  flex: 1 1 60%;
 }
 
 .card--small {
-  height: 38%;
+  /*height: 40%;*/
+  flex: 1 0 40%;
 }
 
-/* Image title */
+/* REMOVE WHEN DONE! */
+.card--medium .image-wrapper,
+.card--small .image-wrapper {
+  background-color: cadetblue;
+  border-radius: 20px 20px 0 0;
+}
+/* END REMOVE */
+
 .card__link {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
+/* Image */
+.image-wrapper {
+  flex-basis: 95%;
+}
+
+.card--large .card__image,
+.card--medium .card__image,
+.card--small .card__image {
+  border-radius: 20px 20px 0 0;
+}
+
+/* Image title */
+
 .card__link > p {
-  position: absolute;
+  flex-basis: 5%;
   background-color: white;
-  padding: 12px;
-  bottom: -16px;
-  left: 0;
+  margin: 0;
+  padding: 16px;
   width: 100%;
   border-radius: 0 0 16px 16px; /* border-radius should be
   less than cards' otherwise white background doesn't

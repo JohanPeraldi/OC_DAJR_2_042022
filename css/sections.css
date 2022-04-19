@@ -1,19 +1,19 @@
-.section-wrapper {
-  display: flex;
-  gap: 40px;
+.main {
+  margin: 0 30px;
 }
 
 .main__section {
   background-color: var(--color-secondary);
-  margin-top: 30px;
-  padding: 30px;
-  border-radius: 20px;
+  /*margin-top: 30px;*/
+  /*padding: 24px;*/
+  border-radius: var(--border-radius-section);
 }
 
 .main__section--search {
-  padding: 0 12px;
+  padding: var(--padding-section);
 }
 
+/* HÉBERGEMENTS A MARSEILLE */
 .main__section--accommodation {
   flex-basis: 66.66%;
   order: 1;
@@ -22,12 +22,12 @@
 .main__section.main__section--accommodation,
 .main__section.main__section--most-popular {
   padding-top: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .main__section.main__section--accommodation > p {
   margin-top: 35px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 
@@ -48,6 +48,12 @@
   order: 2;
 }
 
+.section-wrapper {
+  display: flex;
+  margin-top: 30px;
+  gap: var(--gap);
+}
+
 .main__section-title {
   display: flex;
   justify-content: space-between;
@@ -61,60 +67,9 @@
   padding: 0;
 }
 
-.main__section--activities .card-wrapper {
-  height: 400px;
-  gap: 40px;
+.main__section--activities > h2 {
+  margin-bottom: 20px;
 }
-
-.main__section--activities .card-wrapper > * {
-  flex: 1 1 20%;
-}
-
-.card.card--large,
-.cards {
-  height: 100%;
-  border-radius: 20px;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 40px;
-}
-
-.cards > *,
-.card.card--large {
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
-}
-
-/* REMOVE WHEN DONE */
-/*.card--large:first-of-type {
-  background-color: hotpink;
-}
-
-.cards:nth-of-type(2) {
-  background-color: dodgerblue;
-}
-
-.card--large:nth-of-type(3) {
-  background-color: aquamarine;
-}
-
-.cards:last-of-type {
-  background-color: antiquewhite;
-}
-
-.card--medium {
-  background-color: orange;
-  flex: 1 1 60%;
-}
-
-.card--small {
-  background-color: cadetblue;
-  flex: 1 1 40%;
-}*/
 
 /*************
  MEDIA QUERIES
@@ -143,6 +98,10 @@
   }
 
   /* ACTIVITÉS À MARSEILLE */
+  .main__section--activities > h2 {
+    margin-bottom: 26px;
+  }
+
   .main__section--activities .card-wrapper > * {
     flex: 1 1 47%;
   }
@@ -150,7 +109,12 @@
 
 /* PHONES */
 @media screen and (max-width: 767px) {
+  .main {
+    margin: 60px 0 0;
+  }
+
   .section-wrapper {
+    margin-top: 0;
     gap: 20px;
   }
 
@@ -160,19 +124,19 @@
 
   .main__section.main__section--most-popular {
     flex-direction: row;
-    padding: 15px 12px 40px;
+    padding: 20px 16px 30px;
   }
 
   .main__section.main__section--accommodation {
     margin-top: 0;
-    padding: 0 12px;
+    padding: var(--padding-section);
     background-color: white;
   }
 
   /* ACTIVITÉS À MARSEILLE */
   .main__section.main__section--activities {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-top: 30px;
+    padding: var(--padding-section);
   }
 
   .main__section--activities .card-wrapper {
