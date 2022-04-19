@@ -1,0 +1,57 @@
+.cards-container-test {
+  background-color: orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 30px;
+  height: 375px;
+}
+.card-test {
+  background-color: hotpink;
+  flex-basis: 25%;
+  height: 100%;
+  width: auto;
+}
+.link-test {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.wrapper-test {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.image-container-test {
+  background-color: antiquewhite;
+  text-align: center;
+  border-radius: 16px 16px 0 0;
+  height: 100%;
+}
+.image-test {}
+.image-title-container-test {
+  background-color: white;
+  border-radius: 0 0 16px 16px;
+}
+.image-title-test {
+  margin: 0;
+  padding: 16px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.twin-cards-wrapper-test {
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  flex-basis: 25%;
+  gap: 30px;
+}
+.twin-card--medium-test {
+  background-color: hotpink;
+  flex-basis: 60%;
+}
+.twin-card--small-test {
+  background-color: hotpink;
+  flex-basis: 40%;
+}
