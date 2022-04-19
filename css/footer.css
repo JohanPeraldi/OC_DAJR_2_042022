@@ -5,12 +5,10 @@
 }
 
 .footer__content {
-  /*flex: 0 1 35%;*/
   flex-basis: 35%;
 }
 
 .footer__content > ul {
-  list-style: none;
   padding-left: 0;
 }
 

@@ -13,6 +13,10 @@
   padding: var(--padding-section);
 }
 
+.main__title {
+  font-size: 22px;
+}
+
 /* HÉBERGEMENTS A MARSEILLE */
 .main__section--accommodation {
   flex-basis: 66.66%;
