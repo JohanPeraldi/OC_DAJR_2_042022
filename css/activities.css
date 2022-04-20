@@ -1,0 +1,72 @@
+.main__section--activities .cards-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: var(--gap);
+  height: 375px;
+}
+
+.main__section--activities .card {
+  flex-basis: 25%;
+  height: 100%;
+  width: auto;
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+}
+
+.main__section--activities .link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main__section--activities .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.main__section--activities .image {
+  flex: 1;
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.main__section--activities .image-title {
+  background-color: white;
+  margin: 0;
+  padding: 16px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 0 0 16px 16px;
+}
+
+.twin-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: inherit;
+  flex-basis: 25%;
+  gap: 30px;
+  height: 100%;
+}
+
+.twin-card {
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s;
+}
+
+.twin-card:hover {
+  transform: scale(1.02);
+}
+
+.twin-card--medium {
+  height: 53%;
+}
+
+.twin-card--small {
+  height: 39%;
+}
