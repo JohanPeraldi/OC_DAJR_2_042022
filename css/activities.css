@@ -92,6 +92,14 @@
 
 /* PHONES */
 @media screen and (max-width: 767px) {
+  .main__section--activities > h2 {
+    font-size: 22px;
+  }
+
+  .main__section--activities .image-title {
+    font-size: 15px;
+  }
+
   .main__section--activities .cards-container {
     flex-flow: column nowrap;
     gap: 20px;
