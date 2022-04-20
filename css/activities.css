@@ -92,5 +92,28 @@
 
 /* PHONES */
 @media screen and (max-width: 767px) {
+  .main__section--activities .cards-container {
+    flex-flow: column nowrap;
+    gap: 20px;
+    height: fit-content;
+  }
 
+  .main__section--activities .card,
+  .twin-cards-wrapper {
+    flex: 1 1 100%;
+  }
+
+  .twin-cards-wrapper {
+    gap: 20px;
+  }
+
+  .main__section--activities .card {
+    flex: initial;
+  }
+
+  .main__section--activities .card,
+  .twin-card--medium,
+  .twin-card--small {
+    height: 200px;
+  }
 }
