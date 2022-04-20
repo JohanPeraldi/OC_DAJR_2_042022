@@ -81,9 +81,12 @@
     flex-wrap: wrap;
   }
 
-  .main__section--activities .card,
-  .twin-cards-wrapper {
+  .main__section--activities .card {
     flex: 1 1 48%;
+  }
+
+  .twin-cards-wrapper {
+    flex: 1 1 47%;
   }
 }
 
