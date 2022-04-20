@@ -70,3 +70,24 @@
 .twin-card--small {
   height: 39%;
 }
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* TABLETS */
+@media screen and (max-width: 991px) {
+  .main__section--activities .cards-container {
+    flex-wrap: wrap;
+  }
+
+  .main__section--activities .card,
+  .twin-cards-wrapper {
+    flex: 1 1 48%;
+  }
+}
+
+/* PHONES */
+@media screen and (max-width: 767px) {
+
+}
