@@ -1,5 +1,5 @@
 .cards-container-test {
-  background-color: orange;
+  /*background-color: orange;*/
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -7,10 +7,11 @@
   height: 375px;
 }
 .card-test {
-  background-color: hotpink;
+  /*background-color: hotpink;*/
   flex-basis: 25%;
   height: 100%;
   width: auto;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
 }
 .link-test {
   display: flex;
@@ -57,10 +58,12 @@
   height: 100%;
 }
 .twin-card--medium-test {
-  background-color: hotpink;
+  /*background-color: hotpink;*/
   height: 53%;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
 }
 .twin-card--small-test {
-  background-color: hotpink;
+  /*background-color: hotpink;*/
   height: 39%;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
 }
