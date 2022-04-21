@@ -1,7 +1,11 @@
 .footer {
-  display: flex;
   background-color: var(--color-secondary);
-  padding: 20px 40px;
+  padding: 20px 0;
+}
+
+.footer > .container {
+  display: flex;
+  padding: 0 30px;
 }
 
 .footer__content {
