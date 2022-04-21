@@ -2,9 +2,7 @@
 @import url(global.css);
 @import url(header.css);
 @import url(search.css);
-@import url(sections.css);
 @import url(cards.css);
-@import url(footer.css);
-
-/* REMOVE WHEN DONE! */
+@import url(sections.css);
 @import url(activities.css);
+@import url(footer.css);

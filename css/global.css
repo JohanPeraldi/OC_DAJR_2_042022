@@ -34,7 +34,11 @@ body {
 }
 
 h2 {
-  font-size: 17px;
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 12px;
 }
 
 ul > li {
@@ -48,4 +52,15 @@ a {
 a:link,
 a:visited {
   color: inherit;
+}
+
+/*************
+ MEDIA QUERIES
+ */
+
+/* TABLETS */
+@media screen and (max-width: 991px) {
+  h3 {
+    font-size: 16px;
+  }
 }
