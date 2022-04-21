@@ -6,10 +6,14 @@
   transform: scale(1.02);
 }
 
+.card:hover > a {
+  box-shadow: var(--box-shadow-hover);
+}
+
 .card > a {
   display: flex;
   background-color: white;
-  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--box-shadow);
   border-radius: 20px;
   text-decoration: none;
   color: inherit;
@@ -119,70 +123,6 @@
   justify-content: space-between;
 }
 
-/* ACTIVITÉS À MARSEILLE */
-.main__section--activities .card-wrapper {
-  height: 400px;
-  gap: var(--gap);
-}
-
-.main__section--activities .card-wrapper > * {
-  flex: 1 1 20%;
-}
-
-.cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: var(--gap);
-}
-
-.cards > *,
-.card.card--large {
-  border-radius: 20px;
-  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.12);
-}
-
-.card--medium {
-  flex: 1 1 60%;
-}
-
-.card--small {
-  flex: 1 0 40%;
-}
-
-.card__link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-/* Image */
-.image-wrapper {
-  flex-basis: 95%;
-}
-
-.card--large .card__image,
-.card--medium .card__image,
-.card--small .card__image {
-  border-radius: 20px 20px 0 0;
-}
-
-/* Image title */
-
-.card__link > p {
-  flex-basis: 5%;
-  background-color: white;
-  margin: 0;
-  padding: 16px;
-  width: 100%;
-  border-radius: 0 0 16px 16px; /* border-radius should be
-  less than cards' otherwise white background doesn't
-  cover image completely! */
-  font-size: 13px; /* Make sure font-size doesn't allow
-  text to drop down to another line! */
-  font-weight: bold;
-}
-
 /*************
  MEDIA QUERIES
  */
@@ -212,21 +152,5 @@
   .card-wrapper .card--vertical,
   .card-wrapper .card--horizontal {
     flex-basis: 100%;
-  }
-
-  /* ACTIVITÉS À MARSEILLE */
-  .main__section--activities .card-wrapper {
-    flex-direction: column;
-    height: fit-content;
-  }
-
-  .main__section--activities .card {
-    height: 238px;
-  }
-
-  .card > p {
-    padding: 20px; /* Padding is larger on phones */
-    font-size: 16px; /* Can be larger on phones because
-    card is full-width */
   }
 }
