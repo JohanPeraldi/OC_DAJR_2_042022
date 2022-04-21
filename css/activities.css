@@ -53,14 +53,20 @@
 }
 
 .twin-card {
+  position: relative;
+  top: 0;
+  transition: all 0.3s;
   border-radius: 16px;
   box-shadow: var(--box-shadow);
-  transition: transform 0.3s;
 }
 
 .twin-card:hover {
-  transform: scale(1.02);
+  top: -4px;
   box-shadow: var(--box-shadow-hover);
+}
+
+.twin-card:hover .image-title {
+  color: var(--color-primary);
 }
 
 .twin-card--medium {
